@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./../../../assets/style/globalStyle.css" />
+  <link rel="stylesheet" href="./../../../assets/style/botsCSS/crypherNinja.css" />
+</head>
+
+<body>
+  <div class="main-card-holder justify-center flex items-center gap-4">
+    <div class="card-holder card-holder-i justify-center flex flex-col items-center">
+      <div class="bot-holder-i">
+        <div class="avater-holder flex flex-col justify-center items-center">
+          <div class="bot-head flex justify-center items-center">
+            <div class="face">
+              <div class="eyes">
+                <div class="eye left-eye"></div>
+                <div class="eye right-eye"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bot-body flex">
+            <div class="hand left-hand"></div>
+            <div class="bot-torso-2"></div>
+            <div class="bot-torso"></div>
+            <div class="hand right-hand"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow"></div>
+    </div>
+    <div class="card-holder hide-on-mobile">
+      <ul class="cypher-list">
+        <li>
+          <form id="form" method="post" action="/analyze">
+            <input type="text" id="text" name="url" class="p-2 w-5/6 outline-none"
+              placeholder="https://www.google.com" />
+            <button class="search-btn" value="Submit" onclick="submitForm()">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </li>
+        <li>
+          CrypherNinja will secretly scan a URL to determine whether or not it is appropriate for consumption by a young
+          audience.
+        </li>
+        <li>
+          while Bothub is currently working to get crypherNinja online please check the python subfolder in the sub directory for the python executable file.
+        </li>
+        <li class="flex flex-rol  items-center gap-2">
+          <div class="offline-dot"></div> Engine is currently offline
+
+          <ul class="flex gap-1">
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="back-grid" id="back-to-grid">
+    <i class="bi bi-grid-3x3-gap-fill"></i>
+  </div>
+
+  <script src="./../../../assets/js/botsJS/crypherNinja.js"></script>
+</body>
+
+</html>
