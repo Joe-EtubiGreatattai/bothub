@@ -10,12 +10,12 @@ function submitForm() {
         // Do something with the response from the Python script
       }
     };
-    xhttp.open("POST", "./../../../python/sentiment-analysis.ipynb", true);
+    xhttp.open("POST", "../../../python/sentiment-analysis.ipynb", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send("text=" + text);
   }
 
   document.getElementById('back-to-grid').addEventListener('click',()=>{
 
-    window.open('./../../../../html/grid.html', "_self"); 
+    window.open('../../../../html/grid.html', "_self"); 
   })
