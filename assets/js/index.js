@@ -17,7 +17,7 @@ else if (
   (username.toLowerCase() == "bot002" && password == "password321")
 ) {
   alert("confirm");
-  window.open('./../../html/grid.html', "_self");
+  window.open('../../html/grid.html', "_self");
   return true
 } 
 
@@ -36,6 +36,6 @@ return true;
 
 
 function openCrypher() {
-  window.open('./../../html/bots/crypherNinja/crypherNinja.html', "_self"); 
+  window.open('../../html/bots/crypherNinja/crypherNinja.html', "_self"); 
 }
 
